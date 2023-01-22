@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactame</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<header>
+    <!--contactame.html    Gabriel Francisco Piñuelas Ramos ID: 230626 -->
+    <img id="logo" src="img\LogoItson.png">
+    <a href="contactame.html"><img id="msjI" src="img/messageIcon.png"></a>
+
+    <h1>Contáctame!</h1>
+</header>
+
+<body>
+    <div class="contenedor">
+
+        <nav class="navegador">
+            <ul>
+                <h3>Navegación</h3>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="seriesYPeliculas.html">Series</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="titulo">
+                <h2>Ponte en contacto con el autor!</h2>
+            </div>
+
+            <div class="centro">
+                <br>
+                <form action="mailto:gabriel.pinuelas230626@potros.itson.edu.mx?subject=Forms Contactame" method="post"
+                    enctype="text/plain">
+
+                    <label>Ingresa tu nombre: </label><input placeholder="Tu nombre">
+
+                    <br />
+                    <br />
+
+                    <label for="e-mail">Ingresa tu e-mail:</label>
+                    <input type="email" id="e-mail" name="email">
+
+                    <br />
+                    <br />
+
+                    <label>Ingresa tu dirección de estado* :</label>
+                    <input type="text" id="direccionId" name="direccion" list="direccionesId" />
+
+                    <datalist id="direccionesId">
+                        <option value="Son">Sonora</option>
+                        <option value="Sin">Sin</option>
+                        <option value="Mty">Monterrey</option>
+                        <option value="Gdl">Guadalajara</option>
+                        <option value="It" value="disable">Italia</option>
+                    </datalist>
+
+                    <br>
+
+                    <small>Si no encontraste tu estado, dejala en un comentario abajo!</small>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Selecciona tu ocupación</legend>
+
+                        <input type="radio" id="estudiante" name="ocupacion" value="Estudiante">
+                        <label for="estudiante">Estudiante</label>
+
+                        <br />
+
+                        <input type="radio" id="maestro" name="ocupacion" value="Maestro">
+                        <label for="maestro">Maestr@</label>
+
+                        <br />
+
+                        <input type="radio" id="trabajador" name="ocupacion" value="Trabajador">
+                        <label for="trabajador">Trabajador/@</label>
+
+                        <br />
+
+                        <input type="radio" id="desempleado_noEstudiante" name="ocupacion"
+                            value="Desempleado_noEstudiante">
+                        <label for="desempleado_noEstudiante">Desempleado/No estudiante</label>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>¿Cómo te sientes?</legend>
+
+                        <input type="hidden" name="emocion" value="difusion" />
+
+                        <select>
+
+                            <option>Bien!</option>
+                            <option>Normal</option>
+                            <option>Decaído</option>
+                            <option>Mal</option>
+                        </select>
+                    </fieldset>
+                    <br />
+                    <fieldset>
+                        <legend>Ingresa tus aficiones:</legend>
+                        <textarea name="aficiones" rows="3" cols="50"></textarea>
+                    </fieldset>
+                    <div>
+                        <input type="submit" name="button" value="Enviar!" />
+                        <input type="reset" value="Borrar :s">
+                    </div>
+                    <br>
+                </form>
+
+                <br />
+
+            </div>
+        </main>
+
+        <br>
+
+        <footer>
+            Gabriel Francisco Piñuelas Ramos <br>
+            gabriel.pinuelas230626@potros.itson.edu.mx
+        </footer>
+    </div>
+
+</body>
+
+</html>
